@@ -5,14 +5,15 @@
 }
 
 .App-header {
-  text-align: center;
   background-color: white;
   flex: 1;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: #282c34;
+  text-align: center;
 }
+
 .App-body {
   background-color: #282c34;
   flex: 9;
@@ -20,8 +21,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 20vmin);
   color: white;
-  cursor: pointer; /* Change the cursor to a pointer to indicate it's clickable */
+  cursor: pointer;
+  padding-top: 10px; /* Adjust the padding to move the content down */
 }
