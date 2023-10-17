@@ -5,10 +5,15 @@ import wordsData from "./data/words.json";
 
 function App() {
   const [currentWord, setCurrentWord] = useState("Click to Start");
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   function getRandomWord() {
     const words = wordsData.words; // Access the array of words from the imported JSON
-    const randomIndex = Math.floor(Math.random() * words.length);
+    let randomIndex;
+    do {
+      randomIndex = Math.floor(Math.random() * words.length);
+    } while (randomIndex === currentIndex);
+    setCurrentIndex(randomIndex); // Update the current index to the randomly selected index
     return words[randomIndex];
   }
 
