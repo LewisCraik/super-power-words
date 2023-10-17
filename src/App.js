@@ -17,10 +17,13 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="Body">
       <header className="App-header">
-        <p onClick={handleClick}>{currentWord}</p>
+        <h1>Henry's Super Power Words</h1>
       </header>
+      <body className="App-body" onClick={handleClick}>
+        <p>{currentWord}</p>
+      </body>
     </div>
   );
 }

@@ -1,14 +1,27 @@
 .App {
-  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-header {
+  text-align: center;
+  background-color: white;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #282c34;
+}
+.App-body {
   background-color: #282c34;
-  min-height: 100vh;
+  flex: 9;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 20vmin);
   color: white;
+  cursor: pointer; /* Change the cursor to a pointer to indicate it's clickable */
 }
