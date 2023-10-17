@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import "./App.css";
 
-const words = ["I", "No", "Go"];
+import wordsData from "./data/words.json";
 
 function App() {
   const [currentWord, setCurrentWord] = useState("Click to Start");
 
   function getRandomWord() {
+    const words = wordsData.words; // Access the array of words from the imported JSON
     const randomIndex = Math.floor(Math.random() * words.length);
     return words[randomIndex];
   }
