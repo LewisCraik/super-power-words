@@ -11,8 +11,11 @@ function App() {
     ? process.env.REACT_APP_TITLE
     : "Super Power Words";
 
+  console.log(process.env.REACT_APP_WORDS);
+
   function getRandomWord() {
-    const words = wordsData.words; // Access the array of words from the imported JSON
+    // const words = wordsData.words; // Access the array of words from the imported JSON
+    const words = process.env.REACT_APP_WORDS.split(", ");
     let randomIndex;
     do {
       randomIndex = Math.floor(Math.random() * words.length);
