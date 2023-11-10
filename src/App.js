@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
 
-import wordsData from "./data/words.json";
-
 function App() {
   const [currentWord, setCurrentWord] = useState("Click to Start");
   const [currentIndex, setCurrentIndex] = useState(0);
