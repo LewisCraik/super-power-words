@@ -4,9 +4,13 @@
 
 This is a quick web app to help my son Henry, aged 4, with his "Super Power Words" from school. These are the tricky words in the English language which are hard to sound out phonetically. Each week, the class are taught three new super power words, and at the end of the week they are added to the list of words they should be able to recognise. The goal of this app is to show the words in a random order, so that they can be read out load.
 
-The array of words are stored in `src/data/words.json`, and are pulled in at build time.
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Configuration
+
+The words to be shown are configured using the `REACT_APP_WORDS` environment variable - words should be separated by commas.
+
+The other thing that can be configured is the title, using `REACT_APP_TITLE`, if this is left blank the title will be "Super Power Words".
 
 ## Available Scripts
 
