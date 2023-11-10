@@ -7,6 +7,10 @@ function App() {
   const [currentWord, setCurrentWord] = useState("Click to Start");
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const title = process.env.REACT_APP_TITLE
+    ? process.env.REACT_APP_TITLE
+    : "Super Power Words";
+
   function getRandomWord() {
     const words = wordsData.words; // Access the array of words from the imported JSON
     let randomIndex;
@@ -25,7 +29,7 @@ function App() {
   return (
     <div className="Body">
       <header className="App-header">
-        <h1>Henry's Super Power Words</h1>
+        <h1>{title}</h1>
       </header>
       <body className="App-body" onClick={handleClick}>
         <p>{currentWord}</p>
