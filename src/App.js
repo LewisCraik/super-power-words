@@ -12,13 +12,12 @@ function App() {
   console.log(process.env.REACT_APP_WORDS);
 
   function getRandomWord() {
-    // const words = wordsData.words; // Access the array of words from the imported JSON
     const words = process.env.REACT_APP_WORDS.split(", ");
     let randomIndex;
     do {
       randomIndex = Math.floor(Math.random() * words.length);
     } while (randomIndex === currentIndex);
-    setCurrentIndex(randomIndex); // Update the current index to the randomly selected index
+    setCurrentIndex(randomIndex);
     return words[randomIndex];
   }
 
