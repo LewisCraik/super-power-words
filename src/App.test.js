@@ -1,8 +1,14 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
+test("Renders the default header", () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const headerText = screen.getByText(/Super Power Words/i);
+  expect(headerText).toBeInTheDocument();
+});
+
+test("Renders the start text", () => {
+  render(<App />);
+  const startText = screen.getByText(/Click to Start/i);
+  expect(startText).toBeInTheDocument();
 });
