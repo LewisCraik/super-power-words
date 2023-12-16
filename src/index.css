@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Comic";
-  src: local("Comic"), url(./fonts/COMIC.ttf) format("truetype");
+  src: local("Comic"), url(./fonts/COMIC.TTF) format("truetype");
 }
 
 body {
